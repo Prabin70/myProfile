@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Sofia Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  font-family: "Shadows Into Light", cursive;
+}
+button {
+  font-family: "Sofia Sans", sans-serif;
+}
+::selection {
+  @apply bg-green-500 text-white;
+}
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
