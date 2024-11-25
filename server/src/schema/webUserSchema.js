@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-let webUserSchema = mongoose.Schema({
+const webUserSchema = mongoose.Schema({
     name: {
         type: String,
         required: ['name is required', true]
