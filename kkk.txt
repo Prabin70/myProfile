@@ -1,0 +1,788 @@
+sniPS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git fetch origin
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 20 (delta 13), reused 20 (delta 13), pack-reused 0 (from 0)
+Unpacking objects: 100% (20/20), 2.68 KiB | 32.00 KiB/s, done.
+From https://github.com/allnine/nnine-training
+   fe581e0..6c8acf4  91-career            -> origin/91-career
+ * [new branch]      99-student-api       -> origin/99-student-api
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git checkout 99-student-api
+branch '99-student-api' set up to track 'origin/99-student-api'.
+Switched to a new branch '99-student-api'
+Updating files: 100% (383/383), done.
+branch 'staging' set up to track 'origin/staging'.
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git checkout 99-student-api
+Your branch is up to date with 'origin/99-student-api'.
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git pull origin stagin g
+fatal: couldn't find remote ref stagin
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git pull origin staging 
+From https://github.com/allnine/nnine-training
+ * branch            staging    -> FETCH_HEAD
+Updating b8a6d6e..874b705
+Fast-forward
+ .cspell.json                                       |     7 +
+ .github/ISSUE_TEMPLATE/bug_report.md               |    24 +
+ .github/ISSUE_TEMPLATE/feature_request.md          |    20 +
+ .github/ISSUE_TEMPLATE/task_template.md            |    27 +
+ .github/PUll_REQUEST_TEMPlATE.md                   |    27 +
+ .vscode/settings.json                              |     3 +
+ backend/.gitignore                                 |     1 +
+ backend/Controller/courseController.js             |    21 +
+ backend/Model/courseModel.js                       |    27 +
+ backend/Model/coursesyllabusModel.js               |    24 +
+ backend/Routes/courseRoute.js                      |    10 +
+ backend/Routes/courseSyllabusRoute.js              |     0
+ backend/app.js                                     |    15 +
+ backend/config.env                                 |     3 +
+ backend/package-lock.json                          |  1091 ++
+ backend/package.json                               |    19 +
+ backend/server.js                                  |    29 +
+ next.config.js                                     |     4 +-
+ package-lock.json                                  | 15406 +++++++------------
+ package.json                                       |    31 +-
+ public/+2.jpg                                      |   Bin 0 -> 4667736 bytes
+ public/About1.png                                  |   Bin 0 -> 55638 bytes
+ public/About2.png                                  |   Bin 0 -> 261128 bytes
+ public/About3.png                                  |   Bin 0 -> 308026 bytes
+ public/Arrow1.svg                                  |     3 +
+ public/Arrowdot.svg                                |     4 +
+ public/AspNet.jpeg                                 |   Bin 0 -> 7519 bytes
+ public/Email.svg                                   |     9 +
+ public/Locationon.svg                              |    10 +
+ public/Mailing.svg                                 |     9 +
+ public/Phone1.svg                                  |     9 +
+ public/QA.jpg                                      |   Bin 0 -> 31665 bytes
+ public/QA1.jpg                                     |   Bin 0 -> 125937 bytes
+ public/RHCA.jpg                                    |   Bin 0 -> 23704 bytes
+ ... Certified Developer - Associate (DVA-C02).docx |   Bin 0 -> 299256 bytes
+ ...S Certified Developer - Associate (DVA-C02).pdf |   Bin 0 -> 76381 bytes
+ public/Syllabus/AWS Cloud Practitioner.pdf         |   Bin 0 -> 586808 bytes
+ public/Syllabus/C++ Syllabus.pdf                   |   Bin 0 -> 28442 bytes
+ public/Syllabus/Computer Basics.pdf                |   Bin 0 -> 54335 bytes
+ ... Analytics and Machine Learning with Python.pdf |   Bin 0 -> 65527 bytes
+ public/Syllabus/DevOps Master Course Syllabus.pdf  |   Bin 0 -> 108372 bytes
+ public/Syllabus/DevOps Syllabus.pdf                |   Bin 0 -> 46557 bytes
+ public/Syllabus/Digital Marketing.pdf              |   Bin 0 -> 48949 bytes
+ public/Syllabus/Ethical Hacking Syllabus.pdf       |   Bin 0 -> 31256 bytes
+ public/Syllabus/Graphic Design Syllabus.pdf        |   Bin 0 -> 30105 bytes
+ ...troduction to C an C++ Programming Language.pdf |   Bin 0 -> 37492 bytes
+ public/Syllabus/MERN STACK.pdf                     |   Bin 0 -> 90479 bytes
+ public/Syllabus/Oracle Database.docx               |   Bin 0 -> 296959 bytes
+ public/Syllabus/Oracle Database.pdf                |   Bin 0 -> 42996 bytes
+ public/Syllabus/Python Programming Language.pdf    |   Bin 0 -> 30653 bytes
+ public/Syllabus/Quality Assurance Syllabus.pdf     |   Bin 0 -> 28748 bytes
+ ...Hat Certified OpenShift Administrator exam.docx |   Bin 0 -> 294567 bytes
+ ... Hat Certified OpenShift Administrator exam.pdf |   Bin 0 -> 43206 bytes
+ public/Syllabus/Red Hat OpenShift DevI.pdf         |   Bin 0 -> 52634 bytes
+ ... I_ Introduction to Containers with Podman.docx |   Bin 0 -> 294515 bytes
+ public/Syllabus/Syllabus of ASP NET.pdf            |   Bin 0 -> 372123 bytes
+ public/Syllabus/Video Editing Syllabus.pdf         |   Bin 0 -> 29798 bytes
+ public/Syllabus/Web Design Syllabus.pdf            |   Bin 0 -> 54440 bytes
+ public/Syllabus/Web Development Outline.pdf        |   Bin 0 -> 24369 bytes
+ public/UIUX.jpg                                    |   Bin 0 -> 216769 bytes
+ public/arrow.svg                                   |     3 +
+ public/aws.png                                     |   Bin 0 -> 3876 bytes
+ public/azure.png                                   |   Bin 0 -> 2796 bytes
+ public/bg1.png                                     |   Bin 0 -> 909 bytes
+ public/bg_card.svg                                 |     3 +
+ public/blog.png                                    |   Bin 0 -> 31880 bytes
+ public/blogbg.svg                                  |    17 +
+ public/blogdetailsbg.svg                           |     3 +
+ public/calender.svg                                |     3 +
+ public/career.svg                                  |     4 +
+ public/carousel1.png                               |   Bin 0 -> 3819661 bytes
+ public/carousel2.png                               |   Bin 0 -> 8646353 bytes
+ public/carousel3.png                               |   Bin 0 -> 8463819 bytes
+ public/certificate.svg                             |     7 +
+ public/clock.png                                   |   Bin 0 -> 2171 bytes
+ public/contact2.svg                                |     9 +
+ public/contact4.svg                                |    11 +
+ public/contactcurve.svg                            |     3 +
+ public/contactpage.svg                             |    11 +
+ public/contactus.png                               |   Bin 0 -> 153695 bytes
+ public/coursecurve.svg                             |     3 +
+ public/coursescard2.svg                            |     3 +
+ public/cybersecurity.gif                           |   Bin 0 -> 1659198 bytes
+ public/design.gif                                  |   Bin 0 -> 1559081 bytes
+ public/designing.svg                               |     9 +
+ public/deveops.jpg                                 |   Bin 0 -> 30319 bytes
+ public/deveops1.png                                |   Bin 0 -> 12063 bytes
+ public/docker.png                                  |   Bin 0 -> 22767 bytes
+ public/dropdown.svg                                |     3 +
+ public/duration.svg                                |     3 +
+ public/email2.svg                                  |     9 +
+ public/ethicalhacking.jpeg                         |   Bin 0 -> 7894 bytes
+ public/expert.svg                                  |     3 +
+ public/express3.png                                |   Bin 0 -> 5296 bytes
+ public/express4.svg                                |     9 +
+ public/facebook.svg                                |     3 +
+ public/footer.svg                                  |    13 +-
+ public/gitlab.png                                  |   Bin 0 -> 3125 bytes
+ public/grafana.png                                 |   Bin 0 -> 3929 bytes
+ public/hacking.svg                                 |     9 +
+ public/ic_baseline-facebook (2).svg                |    22 +
+ public/icon1.png                                   |   Bin 0 -> 3873 bytes
+ public/icon2.png                                   |   Bin 0 -> 4479 bytes
+ public/icon3.png                                   |   Bin 0 -> 3121 bytes
+ public/im1.png                                     |   Bin 0 -> 8925 bytes
+ public/im2.png                                     |   Bin 0 -> 9121 bytes
+ public/im3.png                                     |   Bin 0 -> 10341 bytes
+ public/im4.png                                     |   Bin 0 -> 12073 bytes
+ public/im5.png                                     |   Bin 0 -> 9964 bytes
+ public/image 7.png                                 |   Bin 0 -> 146527 bytes
+ public/image.png                                   |   Bin 0 -> 351159 bytes
+ public/linkedln.svg                                |     3 +
+ public/loc.png                                     |   Bin 0 -> 2201 bytes
+ public/location.svg                                |     9 +
+ public/locationtrainers.svg                        |     9 +
+ public/logo2.svg                                   |     9 +
+ public/markdown/courselist.md                      |   323 +-
+ public/mdi_instagram.svg                           |     3 +
+ public/media-mix.gif                               |   Bin 0 -> 4111054 bytes
+ public/mern2.png                                   |   Bin 0 -> 221604 bytes
+ public/mern3.png                                   |   Bin 0 -> 292823 bytes
+ public/mingcute_linkedin-fill.svg                  |    10 +
+ public/mongo.png                                   |   Bin 0 -> 4429 bytes
+ public/mongo4.svg                                  |     9 +
+ public/nirjala.jpg                                 |   Bin 0 -> 85299 bytes
+ public/node2.png                                   |   Bin 0 -> 3351 bytes
+ public/node4.svg                                   |     9 +
+ public/placement.svg                               |     3 +
+ public/price.svg                                   |     3 +
+ public/priya.jpg                                   |   Bin 0 -> 221885 bytes
+ public/priya2.jpg                                  |   Bin 0 -> 196753 bytes
+ public/priya3.jpg                                  |   Bin 0 -> 147644 bytes
+ public/priya7.jpg                                  |   Bin 0 -> 221885 bytes
+ public/priyaa.jpg                                  |   Bin 0 -> 226293 bytes
+ public/priyaaa.jpg                                 |   Bin 0 -> 237729 bytes
+ public/python.svg                                  |    21 +
+ public/pythondjango.png                            |   Bin 0 -> 7429 bytes
+ public/react2.png                                  |   Bin 0 -> 3531 bytes
+ public/react4.svg                                  |     9 +
+ public/redesign.gif                                |   Bin 0 -> 1286975 bytes
+ public/redhatopenshift.png                         |   Bin 0 -> 6310 bytes
+ public/right-up (1).png                            |   Bin 0 -> 264 bytes
+ public/riyaz.jpg                                   |   Bin 0 -> 212358 bytes
+ public/sneha.jpg                                   |   Bin 0 -> 485796 bytes
+ public/star.svg                                    |     3 +
+ public/startrainer.svg                             |     3 +
+ public/support.svg                                 |     9 +
+ public/time.svg                                    |     3 +
+ public/trainerarrow.svg                            |     3 +
+ public/trainersbg.svg                              |     3 +
+ public/trainersdetailsbg.svg                       |     3 +
+ public/trainersprofilebg.svg                       |     3 +
+ public/uploading.gif                               |   Bin 0 -> 1366057 bytes
+ public/user.svg                                    |     9 +
+ public/video.svg                                   |     3 +
+ public/weblogo.svg                                 |     9 +
+ public/whatapp.svg                                 |    21 +
+ src/Syllabus/ASPDotNet.js                          |   262 +-
+ src/Syllabus/AWSDevelopment2.js                    |    20 +
+ src/Syllabus/AWSPractitionerSyllabus.js            |     4 +-
+ src/Syllabus/AWSSolution2.js                       |    19 +
+ src/Syllabus/AspNet2.js                            |    20 +
+ src/Syllabus/AwsCloud2.js                          |    18 +
+ src/Syllabus/AwsDeveloperAssociate.js              |     3 -
+ src/Syllabus/AwsSolutionArchitect.js               |   137 +-
+ src/Syllabus/BasicComputer2.js                     |    19 +
+ src/Syllabus/BasicComputerCourse.js                |     5 -
+ src/Syllabus/CPlus2.js                             |    18 +
+ src/Syllabus/CPlusPlusSyllabus.js                  |     5 +-
+ src/Syllabus/CProgrammingSyllabus.js               |     2 +-
+ src/Syllabus/DataAnalytics.js                      |   436 +-
+ src/Syllabus/DataAnalytics1.js                     |    16 +
+ src/Syllabus/DevOps.js                             |     5 +-
+ src/Syllabus/DevOps2.js                            |    15 +
+ src/Syllabus/DevOpsMasterSyllabus.js               |   210 +-
+ src/Syllabus/DigitalMarketing2.js                  |    17 +
+ src/Syllabus/DigitalMarketingSyllabus.js           |   215 +-
+ src/Syllabus/EthicalHacking2.js                    |    15 +
+ src/Syllabus/EthicalHackingSyllabus.js             |   406 +-
+ src/Syllabus/Flutter.js                            |   245 +
+ src/Syllabus/Flutter2.js                           |    19 +
+ src/Syllabus/GraphicDesign2.js                     |    20 +
+ src/Syllabus/GraphicDesignSyllabus.js              |   481 +-
+ src/Syllabus/MernSyllabus.js                       |     4 +-
+ src/Syllabus/MernSyllabus2.js                      |    16 +
+ src/Syllabus/OpenShift2.js                         |    18 +
+ src/Syllabus/OpenShiftAdministratorSyllabus.js     |     2 +-
+ src/Syllabus/OpenShiftSyllabus.js                  |     3 -
+ src/Syllabus/OracleDBASyllabus.js                  |     2 +-
+ src/Syllabus/PyhtonDjango2.js                      |    19 +
+ src/Syllabus/Python.js                             |    18 +
+ src/Syllabus/PythonSyllabus.js                     |   239 +-
+ src/Syllabus/PythonWithDjango.js                   |   124 +-
+ src/Syllabus/QA.js                                 |   173 +
+ src/Syllabus/QA2.js                                |    17 +
+ src/Syllabus/QualityAssuranceSyllabus.js           |     2 +-
+ src/Syllabus/RHCA_Updated.js                       |   535 +
+ src/Syllabus/RedHatAdministrator2.js               |    17 +
+ src/Syllabus/RedHatOpenShift2.js                   |    17 +
+ src/Syllabus/RedHatOpenShiftDevISyllabus.js        |    97 +-
+ src/Syllabus/Rhca.js                               |   137 +
+ src/Syllabus/UIUX2.js                              |    18 +
+ src/Syllabus/UIUXSyllabus.js                       |   298 +
+ src/Syllabus/VideoSyllabus.js                      |     2 +-
+ src/Syllabus/WebDesignSyllabus.js                  |   314 +-
+ src/Syllabus/Webdevelopment2.js                    |    19 +
+ src/Syllabus/WebdevelopmentSyllabus.js             |   169 +-
+ src/app/Ads/page.js                                |     9 +
+ src/app/Blog/[blog]/page.js                        |    23 +
+ src/app/Blog/page.js                               |    16 +-
+ src/app/Career/page.js                             |    10 +
+ src/app/Contact/page.js                            |     4 +-
+ src/app/Discount/page.js                           |     9 +
+ src/app/Popularcourses/page.js                     |   122 +-
+ src/app/ProductDesigner/page.js                    |    12 +
+ src/app/Syllabus/ASPDotNet/page.js                 |    14 +
+ src/app/Syllabus/AWSPractitionerSyllabus/page.js   |    14 +
+ src/app/Syllabus/Aws/page.js                       |     7 +
+ src/app/Syllabus/AwsDeveloperAssociate/page.js     |    14 +
+ src/app/Syllabus/AwsSolutionArchitect/page.js      |    14 +
+ src/app/Syllabus/BasicComputerCourse/page.js       |    14 +
+ src/app/Syllabus/CPlusPlusSyllabus/page.js         |    14 +
+ src/app/Syllabus/DataScienceML/page.js             |    14 +
+ src/app/Syllabus/DevOpsSyllabus/page.js            |    15 +
+ src/app/Syllabus/Devops.js                         |   632 -
+ src/app/Syllabus/DigitalMarketingSyllabus/page.js  |    15 +
+ src/app/Syllabus/EthicalHackingSyllabus/page.js    |    14 +
+ src/app/Syllabus/Flutter/page.js                   |    14 +
+ src/app/Syllabus/GraphicDesignSyllabus/page.js     |    14 +
+ src/app/Syllabus/MernSyllabus/page.js              |    27 +
+ src/app/Syllabus/PythonSyllabus/page.js            |    15 +
+ src/app/Syllabus/PythonWithDjango/page.js          |    13 +
+ src/app/Syllabus/QATraining/page.js                |    14 +
+ src/app/Syllabus/RHCA/page.js                      |    14 +
+ src/app/Syllabus/RedHatAdministrator/page.js       |    17 +
+ .../Syllabus/RedHatOpenShiftDevISyllabus/page.js   |    14 +
+ src/app/Syllabus/UIUXDesignSyllabus/page.js        |    14 +
+ src/app/Syllabus/WebDevelopement/page.js           |    14 +
+ src/app/Syllabus/page.js                           |    10 -
+ src/app/Trainer/[trainer1]/page.js                 |    30 +
+ src/app/globals.css                                |    21 +-
+ src/app/layout.js                                  |     6 +-
+ src/app/page.js                                    |    37 +-
+ src/components/AWSDeveloperIntro.js                |    57 +
+ src/components/AWSDevelopmentClassType.js          |    71 +
+ src/components/AWSDevelopmentForm.js               |   133 +
+ src/components/AWSDevelopmentSchedule.js           |    41 +
+ src/components/AWSDevelopmentSyllabus1.js          |   336 +
+ src/components/AWSSolutionClassType.js             |    76 +
+ src/components/AWSSolutionForm.js                  |   134 +
+ src/components/AWSSolutionIntro.js                 |    57 +
+ src/components/AWSSolutionSchedule.js              |    40 +
+ src/components/AWSSolutionSyllabus1.js             |   137 +
+ src/components/About.js                            |   280 +-
+ src/components/About1.js                           |   109 +
+ src/components/Ads.js                              |    24 +
+ src/components/AspNetClassType.js                  |    68 +
+ src/components/AspNetForm.js                       |   124 +
+ src/components/AspNetIntro.js                      |    57 +
+ src/components/AspNetSchedule.js                   |    42 +
+ src/components/AspNetSyllabus1.js                  |   166 +
+ src/components/AwsCloud.Intro.js                   |    57 +
+ src/components/AwsCloudClassType.js                |    73 +
+ src/components/AwsCloudForm.js                     |   124 +
+ src/components/AwsCloudSchedule.js                 |    41 +
+ src/components/AwsCloudSyllabus1.js                |   295 +
+ src/components/BasicComputerClassType.js           |    77 +
+ src/components/BasicComputerForm.js                |   134 +
+ src/components/BasicComputerIntro.js               |    57 +
+ src/components/BasicComputerSchedule.js            |    42 +
+ src/components/BasicComputerSyllabus1.js           |   189 +
+ src/components/Blog.js                             |    41 -
+ src/components/BlogDetails.js                      |   180 +
+ src/components/Blogs.js                            |   124 +
+ src/components/CPlusClassType.js                   |    66 +
+ src/components/CPlusForm.js                        |   124 +
+ src/components/CPlusIntro.js                       |    57 +
+ src/components/CPlusSchedule.js                    |    38 +
+ src/components/CPlusSyllabus1.js                   |   190 +
+ src/components/Card.js                             |     8 +-
+ src/components/Card2.js                            |    48 +
+ src/components/Career.js                           |   175 +
+ src/components/Contact.js                          |     3 +-
+ src/components/Contact2.js                         |   155 +
+ src/components/CourseList.js                       |    24 +-
+ src/components/CourseSlide.js                      |   120 +
+ src/components/CourseSyllabus1.js                  |   423 +
+ src/components/DataScienceAndMLClassSchedule.js    |    40 +
+ src/components/DataScienceAndMLClassType.js        |    67 +
+ src/components/DataScienceAndMLForm.js             |   123 +
+ src/components/DataScienceAndMLIntro.js            |    57 +
+ src/components/DataScienceAndMLSyllabus1.js        |   275 +
+ src/components/Description.js                      |    60 +
+ src/components/DeveopsIntro.js                     |    57 +
+ src/components/DevopsClassType.js                  |    72 +
+ src/components/DevopsForm.js                       |   122 +
+ src/components/DevopsSchedule.js                   |    39 +
+ src/components/DevopsSyllabus1.js                  |   371 +
+ src/components/DigitalMarketingClassType.js        |    69 +
+ src/components/DigitalMarketingForm.js             |   122 +
+ src/components/DigitalMarketingIntro.js            |    57 +
+ src/components/DigitalMarketingSchedule.js         |    41 +
+ src/components/DigitalMarketingSyllabus1.js        |   193 +
+ src/components/Digitalmarketing.js                 |    99 +
+ src/components/Discount.js                         |    42 +
+ src/components/EthicalHackingClassType.js          |    73 +
+ src/components/EthicalHackingForm.js               |   122 +
+ src/components/EthicalHackingIntro.js              |    57 +
+ src/components/EthicalHackingSchedule.js           |    40 +
+ src/components/EthicalHackingSyllabus1.js          |   310 +
+ src/components/FlutterClassType.js                 |    66 +
+ src/components/FlutterForm.js                      |   122 +
+ src/components/FlutterSchedule.js                  |    37 +
+ src/components/FlutterSyllabus1.js                 |   237 +
+ src/components/Flutterintro.js                     |    57 +
+ src/components/Footer.js                           |   242 +-
+ src/components/Footer2.js                          |   109 +
+ src/components/Gifpage.js                          |    56 +
+ src/components/GraphicDesignClassType.js           |    68 +
+ src/components/GraphicDesignForm.js                |   123 +
+ src/components/GraphicDesignIntro.js               |    57 +
+ src/components/GraphicDesignSchedule.js            |    41 +
+ src/components/GraphicDesignSyllabus1.js           |   283 +
+ src/components/Hero.js                             |   129 +-
+ src/components/Hero2.js                            |    82 +
+ src/components/Introduction.js                     |    58 +
+ src/components/LandingTrainers.js                  |   140 +
+ src/components/MernClassType.js                    |    73 +
+ src/components/MernForm.js                         |   122 +
+ src/components/MernSchedule.js                     |    40 +
+ src/components/Navbar.js                           |   187 +-
+ src/components/Navbar2.js                          |   193 +
+ src/components/OpenShiftClassType.js               |    69 +
+ src/components/OpenShiftForm.js                    |   123 +
+ src/components/OpenShiftIntro.js                   |    57 +
+ src/components/OpenShiftSchedule.js                |    41 +
+ src/components/OpenShiftSyllabus1.js               |   170 +
+ src/components/ProductDesigner.js                  |   120 +
+ src/components/PyhtonDjangoSyllabus1.js            |   130 +
+ src/components/Python&django.js                    |    96 +
+ src/components/PythonClassType.js                  |    67 +
+ src/components/PythonDjangoClassType.js            |    68 +
+ src/components/PythonDjangoForm.js                 |   123 +
+ src/components/PythonDjangoIntro.js                |    57 +
+ src/components/PythonDjangoSchedule.js             |    40 +
+ src/components/PythonForm.js                       |   122 +
+ src/components/PythonIntro.js                      |    57 +
+ src/components/PythonSchedule.js                   |    39 +
+ src/components/PythonSyllabus1.js                  |   169 +
+ src/components/QAClassType.js                      |    68 +
+ src/components/QAForm.js                           |   121 +
+ src/components/QAIntro.js                          |    57 +
+ src/components/QASchedule.js                       |    41 +
+ src/components/QASyllabus1.js                      |   206 +
+ src/components/RedHatAdministratorClassType.js     |    68 +
+ src/components/RedHatAdministratorForm.js          |   122 +
+ src/components/RedHatAdministratorIntro.js         |    57 +
+ src/components/RedHatAdministratorSchedule.js      |    40 +
+ src/components/RedHatAdministratorSyllabus1.js     |   582 +
+ src/components/RedHatForm.js                       |   124 +
+ .../RedHatOpenShiftDevelopmentClassType.js         |    63 +
+ src/components/RedHatOpenShiftDevelopmentIntro.js  |    57 +
+ .../RedHatOpenShiftDevelopmentSchedule.js          |    40 +
+ src/components/RedHatOpenShiftSyllabus1.js         |   181 +
+ src/components/ReviewLanding.js                    |   138 +
+ src/components/SQA.js                              |   100 +
+ src/components/TrainersDetails.js                  |   276 +
+ src/components/TrainersPage.js                     |   212 +-
+ src/components/TrainersProfile.js                  |    47 -
+ src/components/UIUXClassType.js                    |    68 +
+ src/components/UIUXForm.js                         |   122 +
+ src/components/UIUXSchedule.js                     |    39 +
+ src/components/UIUXSyllabus1.js                    |   235 +
+ src/components/UIUXintro.js                        |    57 +
+ src/components/WebdevelopmentClassType.js          |    69 +
+ src/components/WebdevelopmentForm.js               |   132 +
+ src/components/WebdevelopmentIntro.js              |    61 +
+ src/components/WebdevelopmentSchedule.js           |    39 +
+ src/components/WebdevelopmentSyllabus1.js          |   169 +
+ src/components/WhyUs.js                            |   122 +
+ src/components/graphics.js                         |    95 +
+ tailwind.config.js                                 |    20 +-
+ yarn.lock                                          |   484 +-
+ 383 files changed, 26709 insertions(+), 12638 deletions(-)
+ create mode 100644 .cspell.json
+ create mode 100644 .github/ISSUE_TEMPLATE/bug_report.md
+ create mode 100644 .github/ISSUE_TEMPLATE/feature_request.md
+ create mode 100644 .github/ISSUE_TEMPLATE/task_template.md
+ create mode 100644 .github/PUll_REQUEST_TEMPlATE.md
+ create mode 100644 .vscode/settings.json
+ create mode 100644 backend/.gitignore
+ create mode 100644 backend/Controller/courseController.js
+ create mode 100644 backend/Model/courseModel.js
+ create mode 100644 backend/Model/coursesyllabusModel.js
+ create mode 100644 backend/Routes/courseRoute.js
+ create mode 100644 backend/Routes/courseSyllabusRoute.js
+ create mode 100644 backend/app.js
+ create mode 100644 backend/config.env
+ create mode 100644 backend/package-lock.json
+ create mode 100644 backend/package.json
+ create mode 100644 backend/server.js
+ create mode 100644 public/+2.jpg
+ create mode 100644 public/About1.png
+ create mode 100644 public/About2.png
+ create mode 100644 public/About3.png
+ create mode 100644 public/Arrow1.svg
+ create mode 100644 public/Arrowdot.svg
+ create mode 100644 public/AspNet.jpeg
+ create mode 100644 public/Email.svg
+ create mode 100644 public/Locationon.svg
+ create mode 100644 public/Mailing.svg
+ create mode 100644 public/Phone1.svg
+ create mode 100644 public/QA.jpg
+ create mode 100644 public/QA1.jpg
+ create mode 100644 public/RHCA.jpg
+ create mode 100644 public/Syllabus/AWS Certified Developer - Associate (DVA-C02).docx
+ create mode 100644 public/Syllabus/AWS Certified Developer - Associate (DVA-C02).pdf
+ create mode 100644 public/Syllabus/AWS Cloud Practitioner.pdf
+ create mode 100644 public/Syllabus/C++ Syllabus.pdf
+ create mode 100644 public/Syllabus/Computer Basics.pdf
+ create mode 100644 public/Syllabus/Data Analytics and Machine Learning with Python.pdf
+ create mode 100644 public/Syllabus/DevOps Master Course Syllabus.pdf
+ create mode 100644 public/Syllabus/DevOps Syllabus.pdf
+ create mode 100644 public/Syllabus/Digital Marketing.pdf
+ create mode 100644 public/Syllabus/Ethical Hacking Syllabus.pdf
+ create mode 100644 public/Syllabus/Graphic Design Syllabus.pdf
+ create mode 100644 public/Syllabus/Introduction to C an C++ Programming Language.pdf
+ create mode 100644 public/Syllabus/MERN STACK.pdf
+ create mode 100644 public/Syllabus/Oracle Database.docx
+ create mode 100644 public/Syllabus/Oracle Database.pdf
+ create mode 100644 public/Syllabus/Python Programming Language.pdf
+ create mode 100644 public/Syllabus/Quality Assurance Syllabus.pdf
+ create mode 100644 public/Syllabus/Red Hat Certified OpenShift Administrator exam.docx
+ create mode 100644 public/Syllabus/Red Hat Certified OpenShift Administrator exam.pdf
+ create mode 100644 public/Syllabus/Red Hat OpenShift DevI.pdf
+ create mode 100644 public/Syllabus/Red Hat OpenShift Development I_ Introduction to Containers with Podman.docx
+ create mode 100644 public/Syllabus/Syllabus of ASP NET.pdf
+ create mode 100644 public/Syllabus/Video Editing Syllabus.pdf
+ create mode 100644 public/Syllabus/Web Design Syllabus.pdf
+ create mode 100644 public/Syllabus/Web Development Outline.pdf
+ create mode 100644 public/UIUX.jpg
+ create mode 100644 public/arrow.svg
+ create mode 100644 public/aws.png
+ create mode 100644 public/azure.png
+ create mode 100644 public/bg1.png
+ create mode 100644 public/bg_card.svg
+ create mode 100644 public/blog.png
+ create mode 100644 public/blogbg.svg
+ create mode 100644 public/blogdetailsbg.svg
+ create mode 100644 public/calender.svg
+ create mode 100644 public/career.svg
+ create mode 100644 public/carousel1.png
+ create mode 100644 public/carousel2.png
+ create mode 100644 public/carousel3.png
+ create mode 100644 public/certificate.svg
+ create mode 100644 public/clock.png
+ create mode 100644 public/contact2.svg
+ create mode 100644 public/contact4.svg
+ create mode 100644 public/contactcurve.svg
+ create mode 100644 public/contactpage.svg
+ create mode 100644 public/contactus.png
+ create mode 100644 public/coursecurve.svg
+ create mode 100644 public/coursescard2.svg
+ create mode 100644 public/cybersecurity.gif
+ create mode 100644 public/design.gif
+ create mode 100644 public/designing.svg
+ create mode 100644 public/deveops.jpg
+ create mode 100644 public/deveops1.png
+ create mode 100644 public/docker.png
+ create mode 100644 public/dropdown.svg
+ create mode 100644 public/duration.svg
+ create mode 100644 public/email2.svg
+ create mode 100644 public/ethicalhacking.jpeg
+ create mode 100644 public/expert.svg
+ create mode 100644 public/express3.png
+ create mode 100644 public/express4.svg
+ create mode 100644 public/facebook.svg
+ create mode 100644 public/gitlab.png
+ create mode 100644 public/grafana.png
+ create mode 100644 public/hacking.svg
+ create mode 100644 public/ic_baseline-facebook (2).svg
+ create mode 100644 public/icon1.png
+ create mode 100644 public/icon2.png
+ create mode 100644 public/icon3.png
+ create mode 100644 public/im1.png
+ create mode 100644 public/im2.png
+ create mode 100644 public/im3.png
+ create mode 100644 public/im4.png
+ create mode 100644 public/im5.png
+ create mode 100644 public/image 7.png
+ create mode 100644 public/image.png
+ create mode 100644 public/linkedln.svg
+ create mode 100644 public/loc.png
+ create mode 100644 public/location.svg
+ create mode 100644 public/locationtrainers.svg
+ create mode 100644 public/logo2.svg
+ create mode 100644 public/mdi_instagram.svg
+ create mode 100644 public/media-mix.gif
+ create mode 100644 public/mern2.png
+ create mode 100644 public/mern3.png
+ create mode 100644 public/mingcute_linkedin-fill.svg
+ create mode 100644 public/mongo.png
+ create mode 100644 public/mongo4.svg
+ create mode 100644 public/nirjala.jpg
+ create mode 100644 public/node2.png
+ create mode 100644 public/node4.svg
+ create mode 100644 public/placement.svg
+ create mode 100644 public/price.svg
+ create mode 100644 public/priya.jpg
+ create mode 100644 public/priya2.jpg
+ create mode 100644 public/priya3.jpg
+ create mode 100644 public/priya7.jpg
+ create mode 100644 public/priyaa.jpg
+ create mode 100644 public/priyaaa.jpg
+ create mode 100644 public/python.svg
+ create mode 100644 public/pythondjango.png
+ create mode 100644 public/react2.png
+ create mode 100644 public/react4.svg
+ create mode 100644 public/redesign.gif
+ create mode 100644 public/redhatopenshift.png
+ create mode 100644 public/right-up (1).png
+ create mode 100644 public/riyaz.jpg
+ create mode 100644 public/sneha.jpg
+ create mode 100644 public/star.svg
+ create mode 100644 public/startrainer.svg
+ create mode 100644 public/support.svg
+ create mode 100644 public/time.svg
+ create mode 100644 public/trainerarrow.svg
+ create mode 100644 public/trainersbg.svg
+ create mode 100644 public/trainersdetailsbg.svg
+ create mode 100644 public/trainersprofilebg.svg
+ create mode 100644 public/uploading.gif
+ create mode 100644 public/user.svg
+ create mode 100644 public/video.svg
+ create mode 100644 public/weblogo.svg
+ create mode 100644 public/whatapp.svg
+ create mode 100644 src/Syllabus/AWSDevelopment2.js
+ create mode 100644 src/Syllabus/AWSSolution2.js
+ create mode 100644 src/Syllabus/AspNet2.js
+ create mode 100644 src/Syllabus/AwsCloud2.js
+ create mode 100644 src/Syllabus/BasicComputer2.js
+ create mode 100644 src/Syllabus/CPlus2.js
+ create mode 100644 src/Syllabus/DataAnalytics1.js
+ create mode 100644 src/Syllabus/DevOps2.js
+ create mode 100644 src/Syllabus/DigitalMarketing2.js
+ create mode 100644 src/Syllabus/EthicalHacking2.js
+ create mode 100644 src/Syllabus/Flutter.js
+ create mode 100644 src/Syllabus/Flutter2.js
+ create mode 100644 src/Syllabus/GraphicDesign2.js
+ create mode 100644 src/Syllabus/MernSyllabus2.js
+ create mode 100644 src/Syllabus/OpenShift2.js
+ create mode 100644 src/Syllabus/PyhtonDjango2.js
+ create mode 100644 src/Syllabus/Python.js
+ create mode 100644 src/Syllabus/QA.js
+ create mode 100644 src/Syllabus/QA2.js
+ create mode 100644 src/Syllabus/RHCA_Updated.js
+ create mode 100644 src/Syllabus/RedHatAdministrator2.js
+ create mode 100644 src/Syllabus/RedHatOpenShift2.js
+ create mode 100644 src/Syllabus/Rhca.js
+ create mode 100644 src/Syllabus/UIUX2.js
+ create mode 100644 src/Syllabus/UIUXSyllabus.js
+ create mode 100644 src/Syllabus/Webdevelopment2.js
+ create mode 100644 src/app/Ads/page.js
+ create mode 100644 src/app/Blog/[blog]/page.js
+ create mode 100644 src/app/Career/page.js
+ create mode 100644 src/app/Discount/page.js
+ create mode 100644 src/app/ProductDesigner/page.js
+ create mode 100644 src/app/Syllabus/ASPDotNet/page.js
+ create mode 100644 src/app/Syllabus/AWSPractitionerSyllabus/page.js
+ create mode 100644 src/app/Syllabus/Aws/page.js
+ create mode 100644 src/app/Syllabus/AwsDeveloperAssociate/page.js
+ create mode 100644 src/app/Syllabus/AwsSolutionArchitect/page.js
+ create mode 100644 src/app/Syllabus/BasicComputerCourse/page.js
+ create mode 100644 src/app/Syllabus/CPlusPlusSyllabus/page.js
+ create mode 100644 src/app/Syllabus/DataScienceML/page.js
+ create mode 100644 src/app/Syllabus/DevOpsSyllabus/page.js
+ delete mode 100644 src/app/Syllabus/Devops.js
+ create mode 100644 src/app/Syllabus/DigitalMarketingSyllabus/page.js
+ create mode 100644 src/app/Syllabus/EthicalHackingSyllabus/page.js
+ create mode 100644 src/app/Syllabus/Flutter/page.js
+ create mode 100644 src/app/Syllabus/GraphicDesignSyllabus/page.js
+ create mode 100644 src/app/Syllabus/MernSyllabus/page.js
+ create mode 100644 src/app/Syllabus/PythonSyllabus/page.js
+ create mode 100644 src/app/Syllabus/PythonWithDjango/page.js
+ create mode 100644 src/app/Syllabus/QATraining/page.js
+ create mode 100644 src/app/Syllabus/RHCA/page.js
+ create mode 100644 src/app/Syllabus/RedHatAdministrator/page.js
+ create mode 100644 src/app/Syllabus/RedHatOpenShiftDevISyllabus/page.js
+ create mode 100644 src/app/Syllabus/UIUXDesignSyllabus/page.js
+ create mode 100644 src/app/Syllabus/WebDevelopement/page.js
+ delete mode 100644 src/app/Syllabus/page.js
+ create mode 100644 src/app/Trainer/[trainer1]/page.js
+ create mode 100644 src/components/AWSDeveloperIntro.js
+ create mode 100644 src/components/AWSDevelopmentClassType.js
+ create mode 100644 src/components/AWSDevelopmentForm.js
+ create mode 100644 src/components/AWSDevelopmentSchedule.js
+ create mode 100644 src/components/AWSDevelopmentSyllabus1.js
+ create mode 100644 src/components/AWSSolutionClassType.js
+ create mode 100644 src/components/AWSSolutionForm.js
+ create mode 100644 src/components/AWSSolutionIntro.js
+ create mode 100644 src/components/AWSSolutionSchedule.js
+ create mode 100644 src/components/AWSSolutionSyllabus1.js
+ create mode 100644 src/components/About1.js
+ create mode 100644 src/components/Ads.js
+ create mode 100644 src/components/AspNetClassType.js
+ create mode 100644 src/components/AspNetForm.js
+ create mode 100644 src/components/AspNetIntro.js
+ create mode 100644 src/components/AspNetSchedule.js
+ create mode 100644 src/components/AspNetSyllabus1.js
+ create mode 100644 src/components/AwsCloud.Intro.js
+ create mode 100644 src/components/AwsCloudClassType.js
+ create mode 100644 src/components/AwsCloudForm.js
+ create mode 100644 src/components/AwsCloudSchedule.js
+ create mode 100644 src/components/AwsCloudSyllabus1.js
+ create mode 100644 src/components/BasicComputerClassType.js
+ create mode 100644 src/components/BasicComputerForm.js
+ create mode 100644 src/components/BasicComputerIntro.js
+ create mode 100644 src/components/BasicComputerSchedule.js
+ create mode 100644 src/components/BasicComputerSyllabus1.js
+ delete mode 100644 src/components/Blog.js
+ create mode 100644 src/components/BlogDetails.js
+ create mode 100644 src/components/Blogs.js
+ create mode 100644 src/components/CPlusClassType.js
+ create mode 100644 src/components/CPlusForm.js
+ create mode 100644 src/components/CPlusIntro.js
+ create mode 100644 src/components/CPlusSchedule.js
+ create mode 100644 src/components/CPlusSyllabus1.js
+ create mode 100644 src/components/Card2.js
+ create mode 100644 src/components/Career.js
+ create mode 100644 src/components/Contact2.js
+ create mode 100644 src/components/CourseSlide.js
+ create mode 100644 src/components/CourseSyllabus1.js
+ create mode 100644 src/components/DataScienceAndMLClassSchedule.js
+ create mode 100644 src/components/DataScienceAndMLClassType.js
+ create mode 100644 src/components/DataScienceAndMLForm.js
+ create mode 100644 src/components/DataScienceAndMLIntro.js
+ create mode 100644 src/components/DataScienceAndMLSyllabus1.js
+ create mode 100644 src/components/Description.js
+ create mode 100644 src/components/DeveopsIntro.js
+ create mode 100644 src/components/DevopsClassType.js
+ create mode 100644 src/components/DevopsForm.js
+ create mode 100644 src/components/DevopsSchedule.js
+ create mode 100644 src/components/DevopsSyllabus1.js
+ create mode 100644 src/components/DigitalMarketingClassType.js
+ create mode 100644 src/components/DigitalMarketingForm.js
+ create mode 100644 src/components/DigitalMarketingIntro.js
+ create mode 100644 src/components/DigitalMarketingSchedule.js
+ create mode 100644 src/components/DigitalMarketingSyllabus1.js
+ create mode 100644 src/components/Digitalmarketing.js
+ create mode 100644 src/components/Discount.js
+ create mode 100644 src/components/EthicalHackingClassType.js
+ create mode 100644 src/components/EthicalHackingForm.js
+ create mode 100644 src/components/EthicalHackingIntro.js
+ create mode 100644 src/components/EthicalHackingSchedule.js
+ create mode 100644 src/components/EthicalHackingSyllabus1.js
+ create mode 100644 src/components/FlutterClassType.js
+ create mode 100644 src/components/FlutterForm.js
+ create mode 100644 src/components/FlutterSchedule.js
+ create mode 100644 src/components/FlutterSyllabus1.js
+ create mode 100644 src/components/Flutterintro.js
+ create mode 100644 src/components/Footer2.js
+ create mode 100644 src/components/Gifpage.js
+ create mode 100644 src/components/GraphicDesignClassType.js
+ create mode 100644 src/components/GraphicDesignForm.js
+ create mode 100644 src/components/GraphicDesignIntro.js
+ create mode 100644 src/components/GraphicDesignSchedule.js
+ create mode 100644 src/components/GraphicDesignSyllabus1.js
+ create mode 100644 src/components/Hero2.js
+ create mode 100644 src/components/Introduction.js
+ create mode 100644 src/components/LandingTrainers.js
+ create mode 100644 src/components/MernClassType.js
+ create mode 100644 src/components/MernForm.js
+ create mode 100644 src/components/MernSchedule.js
+ create mode 100644 src/components/Navbar2.js
+ create mode 100644 src/components/OpenShiftClassType.js
+ create mode 100644 src/components/OpenShiftForm.js
+ create mode 100644 src/components/OpenShiftIntro.js
+ create mode 100644 src/components/OpenShiftSchedule.js
+ create mode 100644 src/components/OpenShiftSyllabus1.js
+ create mode 100644 src/components/ProductDesigner.js
+ create mode 100644 src/components/PyhtonDjangoSyllabus1.js
+ create mode 100644 src/components/Python&django.js
+ create mode 100644 src/components/PythonClassType.js
+ create mode 100644 src/components/PythonDjangoClassType.js
+ create mode 100644 src/components/PythonDjangoForm.js
+ create mode 100644 src/components/PythonDjangoIntro.js
+ create mode 100644 src/components/PythonDjangoSchedule.js
+ create mode 100644 src/components/PythonForm.js
+ create mode 100644 src/components/PythonIntro.js
+ create mode 100644 src/components/PythonSchedule.js
+ create mode 100644 src/components/PythonSyllabus1.js
+ create mode 100644 src/components/QAClassType.js
+ create mode 100644 src/components/QAForm.js
+ create mode 100644 src/components/QAIntro.js
+ create mode 100644 src/components/QASchedule.js
+ create mode 100644 src/components/QASyllabus1.js
+ create mode 100644 src/components/RedHatAdministratorClassType.js
+ create mode 100644 src/components/RedHatAdministratorForm.js
+ create mode 100644 src/components/RedHatAdministratorIntro.js
+ create mode 100644 src/components/RedHatAdministratorSchedule.js
+ create mode 100644 src/components/RedHatAdministratorSyllabus1.js
+ create mode 100644 src/components/RedHatForm.js
+ create mode 100644 src/components/RedHatOpenShiftDevelopmentClassType.js
+ create mode 100644 src/components/RedHatOpenShiftDevelopmentIntro.js
+ create mode 100644 src/components/RedHatOpenShiftDevelopmentSchedule.js
+ create mode 100644 src/components/RedHatOpenShiftSyllabus1.js
+ create mode 100644 src/components/ReviewLanding.js
+ create mode 100644 src/components/SQA.js
+ create mode 100644 src/components/TrainersDetails.js
+ delete mode 100644 src/components/TrainersProfile.js
+ create mode 100644 src/components/UIUXClassType.js
+ create mode 100644 src/components/UIUXForm.js
+ create mode 100644 src/components/UIUXSchedule.js
+ create mode 100644 src/components/UIUXSyllabus1.js
+ create mode 100644 src/components/UIUXintro.js
+ create mode 100644 src/components/WebdevelopmentClassType.js
+ create mode 100644 src/components/WebdevelopmentForm.js
+ create mode 100644 src/components/WebdevelopmentIntro.js
+ create mode 100644 src/components/WebdevelopmentSchedule.js
+ create mode 100644 src/components/WebdevelopmentSyllabus1.js
+ create mode 100644 src/components/WhyUs.js
+ create mode 100644 src/components/graphics.js
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git status
+On branch 99-student-api
+Your branch is ahead of 'origin/99-student-api' by 180 commits.
+  (use "git push" to publish your local commits)
+
+        backend/Model/student.model.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git commit -m "feat:new "
+[99-student-api 271663a] feat:new
+ 1 file changed, 1 insertion(+)
+ create mode 100644 backend/Model/student.model.js
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 444 bytes | 222.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: GitHub found 11 vulnerabilities on allnine/nnine-training's default branch (4 high, 7 moderate). To find out more, visit 
+remote:      https://github.com/allnine/nnine-training/security/dependabot
+remote:
+To https://github.com/allnine/nnine-training.git
+   b8a6d6e..271663a  99-student-api -> 99-student-api
+PS C:\Users\ACER\OneDrive\Desktop\N9 solution\nnine-training> git checkout staging 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

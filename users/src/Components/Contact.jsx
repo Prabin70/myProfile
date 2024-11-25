@@ -41,13 +41,16 @@ const Contact = () => {
       <ToastContainer />
       <div
         id="contact"
-        className=" h-[60vh] sm:h-[100vh] w-full flex flex-row-reverse items-center justify-center gap-20  sm:px-12 sm:py-6 bg-green-200 bg-cover bg-center "
+        className=" h-[60vh] sm:h-[100vh] w-full flex flex-row-reverse items-center justify-center gap-20  sm:px-12 sm:py-6 bg-gray-50 bg-cover bg-center "
       >
         <div className="hidden sm:flex">
-          <img src="/src/assets/service.png" className="h-[500px] " />
+          <img
+            src="/src/assets/service.png"
+            className="h-[500px] opacity-15 "
+          />
         </div>
 
-        <div className="bg-green-300 border border-transparent border-t-green-500  py-8 rounded-lg flex items-center justify-center h-[450px] w-[300px] sm:w-[500px] sm:h-[400px] shadow-2xl">
+        <div className=" border border-transparent  py-8 rounded-lg sm:flex items-center justify-center h-[450px] w-[300px] sm:w-[500px] sm:h-[400px] ">
           <form onSubmit={handleSubmit}>
             <div className="mb-6">
               <h2 className="text-[30px]">Contact </h2>
@@ -61,7 +64,7 @@ const Contact = () => {
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
-                className=" w-full sm:w-auto outline-none border border-gray-200 rounded-sm focus:border-gray-600 bg-gray-100 px-2 py-1 focus:bg-gray-50"
+                className=" w-full  sm:w-auto outline-none border border-b-gray-200  focus:border-b-gray-600 bg-gray-50 px-2 py-1 focus:bg-gray-50"
                 type="text"
                 placeholder="First Name *  "
                 required
@@ -73,7 +76,7 @@ const Contact = () => {
                 onChange={(e) => {
                   setLastName(e.target.value);
                 }}
-                className=" w-full sm:w-auto outline-none border border-gray-200 rounded-sm focus:border-gray-600 bg-gray-100 px-2 py-1 focus:bg-gray-50"
+                className=" w-full  sm:w-auto outline-none border border-b-gray-200  focus:border-b-gray-600 bg-gray-50 px-2 py-1 focus:bg-gray-50"
                 type="text"
                 placeholder="Last Name "
               />
@@ -86,7 +89,7 @@ const Contact = () => {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                className=" w-full outline-none border border-gray-200 rounded-sm bg-gray-100 px-2 py-1  active:border-gray-100 focus:border-gray-500 invalid:border-pink-700 focus:bg-gray-50"
+                className=" w-full  outline-none border border-gray-200 rounded-sm bg-gray-50 px-2 py-1  focus:border-b-gray-500  focus:bg-gray-50"
                 type="email"
                 placeholder="Email *"
                 required
@@ -100,7 +103,7 @@ const Contact = () => {
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
-                className="border focus:border-gray-600 px-2 py-1 w-full outline-none h-[100px]  rounded-none resize-none focus:bg-gray-50"
+                className="border bg-gray-50 px-2 py-1 w-full outline-none h-[100px]  rounded-none resize-none focus:bg-gray-50 focus:border-gray-500"
                 placeholder="Message here *"
               ></textarea>
             </div>

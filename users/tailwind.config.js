@@ -55,7 +55,7 @@ export default {
 
 
       boxShadow: {
-        '3xl': '0 35px 60px -7px #0ef',
+        '3xl': '0 10px 10px -7px #808080',
       },
       dropShadow: {
         '3xl': '0 0 25px #0ef',
